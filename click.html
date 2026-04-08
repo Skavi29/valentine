@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love💖</title>
+    <style>
+        body{
+            background-image: url(click.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        @media screen and (max-width:700px){
+            body{
+            background-image: url(heart.avif);
+            background-repeat: no-repeat;
+            background-size: 500px 650px;    
+            }
+        }
+        .one{
+            border: 2px solid rgb(94, 92, 92);
+            background-color: rgba(236, 95, 102, 0.849);
+            width:600px;
+            height: 590px;
+            margin-left: 400px;
+            margin-top: 30px;
+            border-radius: 20px;
+        }
+        @media screen and (max-width:700px){
+            .one{
+                width:400px;
+                height:380px;
+                margin-left: 40px;
+                margin-top: 170px;
+                border-radius: 20px;
+            }
+        }
+        .oneh1{
+            /* background-color: aliceblue; */
+            width: 600px;
+            height: 80px; 
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            text-align: center;
+            font-size: 33px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        @media screen and (max-width:700px){
+            .oneh1{
+                width:400px;
+                height:80px;
+                /* display: flex;
+                justify-content: center;
+                align-items: center; */
+                font-size:20px ;
+            }
+        }
+        .oneh2{
+            /* background-color: rgb(77, 115, 148); */
+            width: 600px;
+            height: 50px; 
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.5 ease;
+            transform: 0.5 ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* display: none; */
+            text-align: center;
+            font-size: 23px;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: rgb(97, 1, 97);
+            /* text-shadow: 0.9px 9px 9px 9px black; */
+            margin-top: 17px;
+        }
+        @media screen and (max-width:700px){
+            .oneh2{
+                width: 400px;
+                height: 30px;
+                font-size: 18px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: -21px;
+            }
+        }
+        .show{
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .btn1{
+            /* margin-left: 20px; */
+            /* margin-top: 20px; */
+            width: 160px;
+            height: 50px;
+            border-radius: 30px;
+            border: none;
+            background-color: pink;
+            font-size: 17px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            float: left;
+            /* position: fixed; */
+        }
+        @media screen and (max-width:700px){
+            .btn1{
+                width: 100px;
+                height: 40px;
+                border-radius: 30px;
+                border: none;
+                background-color: pink;
+                font-size: 17px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                margin-left: 40px;
+                /* margin-top: 20px; */
+            }
+        }
+
+
+        .btn1:hover{
+            background-color: rgb(245, 61, 92);
+            color: aliceblue;
+            box-shadow: 0.9px 0.9px 9px 0.9px black;
+        }
+        @media screen and (max-width:700px){
+            .btn1:hover{
+            background-color: rgb(245, 61, 92);
+            color: aliceblue;
+            box-shadow: 0.9px 0.9px 9px 0.9px black;
+        }
+        }
+
+
+        .btn2{
+            border: 1px solid rgb(63, 63, 63);
+            background-color: rgb(255, 255, 255);
+            /* margin-left: 60px; */
+            width: 120px;
+            height: 50px;
+            border-radius: 30px;
+            /* border: none; */
+            font-size: 16px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            /* position: fixed; */
+            /* float: right; */
+            margin-left: 170px;
+            
+        }
+        @media screen and (max-width:700px){
+            .btn2{
+                width: 100px;
+                height: 40px;
+                border-radius: 30px;
+                /* margin-left: 100px; */
+                font-size: 13px;
+                /* margin-top: -110px; */
+                margin-left: 85px;
+            }
+        }
+
+
+        .btn2:hover{
+            box-shadow: 0.9px 0.9px 9px 0.9px black;
+        }
+        @media screen and (max-width:700px){
+            .btn2:hover{
+            box-shadow: 0.9px 0.9px 9px 0.9px black;
+        }
+        }
+         .otwo{
+            /* background-color: blueviolet; */
+            width: 450px;
+            height: 50px;
+            margin-top: 30px;
+            margin-left: 76px;
+            display: flex;
+            /* position: fixed; */
+         }
+         @media screen and (max-width:700px){
+            .otwo{
+                width: 330px;
+                height: 40px;
+                margin-top: -111px;
+                margin-left: 30px;
+            }
+         }
+
+         .two{
+            /* background-color: aqua; */
+            width: 570px;
+            height: 330px;
+            margin-left: 10px;
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+         }
+
+         .twoone{
+            background-color: rgb(241, 174, 212);
+            width: 200px;
+            height: 330px;
+            border-radius: 10px;
+            border: 2px solid rgb(39, 39, 39);
+            object-fit: cover;
+            transition: transform 0.4s;
+            /* height: 100%; */
+         }
+         @media screen and (max-width:700px){
+            .twoone{
+                width: 80px;
+                height: 200px;
+            }
+         }
+         #img1{
+            border-top-left-radius:10px ;
+            border-top-right-radius: 10px;
+         }
+         @media screen and (max-width:700px){
+            #img1{
+                width: 80px;
+                height: 150px;
+            }
+        }
+
+         .btn{
+            background-color: rgb(226, 98, 177);
+            width: 80px;
+            height: 50px;
+            margin-left: 25px;
+            margin-top: 10px;
+            border-radius: 10px;
+            border: none;
+            font-size: 16px;
+         }
+         @media screen and (max-width:700px){
+            .btn{
+                width: 40px;
+                height: 30px;
+                margin-left: 20px;
+                font-size: 15px;
+                font-weight: 500;
+                font-family: sans-serif;
+                /* margin-right: 50px; */
+            }
+         }
+         .btn:hover{
+             box-shadow: 0.9px 0.9px 9px 0.9px black;
+             color: antiquewhite;
+         }
+         .twoone:hover {
+            transform: scale(1.11);
+         }
+    </style>
+</head>
+<body>
+    <div class="one">
+            <div class="oneh1">This Movie🎬 Scene Are My Favorite🤗. So We Are Recreat This Scens💕.</div>
+
+            <div class="oneh2" id="oneH2">You Have a🤭 Only One Choice.. So Click Okk💝</div>
+
+            <div class="two">
+                <div class="twoone">
+                    <img src="sillunu or kadhal.jpeg" alt="surya" width="130px" height="250px" id="img1">
+                    <a href="surya.html"><button class="btn">See</button></a>
+                </div>
+
+                <div class="twoone">
+                    <img src="sirai movie.jpeg" alt="sirai" width="130px" height="250px" id="img1">
+                    <a href="sirai.html"><button class="btn">See</button></a>
+                </div>
+
+                <div class="twoone">
+                    <img src="three movie.jpeg" alt="three" width="130px" height="250px" id="img1">
+                    <a href="three.html"><button class="btn">See</button></a>
+                </div>
+
+                <div class="twoone">
+                    <img src="varnamAayiram.jpg" alt="three" width="130px" height="250px" id="img1">
+                    <a href="varnamAayiram.html"><button class="btn">See</button></a>
+                </div>
+            </div>
+            
+            <div class="otwo">
+            <a href="submit.html"><button class="btn1" id="yes" onclick="yess()">Okk..💝</button></a>
+            <button class="btn2" id="no" onclick="noo()">Noo🥺</button>
+        </div>
+    </div>
+
+    <script>
+        var yes=document.getElementById("yes")
+        var No=document.getElementById("no")
+        var oneH2=document.getElementById("oneH2")
+        
+
+        No.addEventListener("click",()=>{
+            No.innerText="It's Cann't Works😂"
+            oneH2.classList.add('show')
+        })
+
+    </script>
+</body>
+</html>

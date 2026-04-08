@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love💖</title>
+    <style>
+        body{
+            background-image: url(ok.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        @media screen and (max-width:700px){
+            body{
+            background-image: url(heart.avif);
+            background-repeat: no-repeat;
+            background-size: 500px 650px;    
+            }
+        }
+        .one{
+            border: 2px solid rgba(94, 92, 92, 0.452);
+            background-color: rgba(243, 156, 204, 0.603);
+            width:600px;
+            height: 430px;
+            margin-left: 400px;
+            margin-top: 150px;
+            border-radius: 20px;
+        }
+        @media screen and (max-width:700px){
+            .one{
+                width:400px;
+                height:350px;
+                margin-left: 40px;
+                margin-top: 170px;
+                border-radius: 20px;
+            }
+        }
+        .oneh1{
+            /* background-color: aliceblue; */
+            width: 600px;
+            height: 100px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 45px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        @media screen and (max-width:700px){
+            .oneh1{
+                width:400px;
+                height:80px;
+                /* display: flex;
+                justify-content: center;
+                align-items: center; */
+                font-size:25px ;
+            }
+        }
+        .oneh2{
+            /* background-color: rgb(77, 115, 148); */
+            width: 600px;
+            height: 70px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* display: none; */
+            text-align: center;
+            font-size: 20px;
+            font-family:sans-serif;
+            color: black;
+        }
+        @media screen and (max-width:700px){
+            .oneh2{
+                width: 400px;
+                height: 80px;
+                font-size: 13px;
+                font-weight:bolder;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        
+        .btn1{
+            /* margin-left: 20px; */
+            /* margin-top: 20px; */
+            width: 260px;
+            height: 50px;
+            border-radius: 30px;
+            border: 1px solid rgba(0, 0, 0, 0.616);
+            background-color: rgb(243, 76, 159);
+            font-size: 17px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position: fixed;
+        }
+        @media screen and (max-width:700px){
+            .btn1{
+                width: 100px;
+                height: 40px;
+                border-radius: 30px;
+                border: none;
+                /* background-color: pink; */
+                font-size: 17px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                margin-left: 150px;
+                margin-top: -13px;
+            }
+        }
+
+
+        .btn1:hover{
+            background-color: rgb(245, 61, 92);
+            color: aliceblue;
+            box-shadow: 0.9px 0.9px 9px 0.9px black;
+        }
+        @media screen and (max-width:700px){
+            .btn1:hover{
+            background-color: rgb(245, 61, 92);
+            color: aliceblue;
+            box-shadow: 0.9px 0.9px 9px 0.9px black;
+        }
+        }
+
+         .otwo{
+            /* background-color: blueviolet; */
+            width: 450px;
+            height: 80px;
+            margin-top: 20px;
+            margin-left: 25%;
+            /* position: fixed; */
+         }
+         @media screen and (max-width:700px){
+            .otwo{
+                width: 400px;
+                height: 50px;
+                margin-left: 0;
+            }
+         }
+
+         #input{
+            margin-top: 30px;
+            margin-left: 100px;
+            width: 360px;
+            height: 65px;
+            border-radius: 10px;
+            border: none;
+            font-size: 26px;
+            font-family:'Times New Roman', Times, serif;
+         }
+         @media screen and (max-width:700px){
+            #input{
+                width: 300px;
+                height: 50px;
+                margin-left: 46px;
+                margin-top: 10px;
+            }
+         }
+
+         .two{
+            /* background-color: aqua; */
+            width: 300px;
+            height: 50px;
+            margin-left: 22%;
+            margin-top: 20px;
+            font-size: 21px;
+            text-align: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.5 ease;
+            transform: 0.5 ease;
+            color: rgb(255, 0, 76);
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+         }
+         @media screen and (max-width:700px){
+            .two{
+                width: 300px;
+                height: 40px;
+                margin-left: 50px;
+            }
+         }
+
+         .show{
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="one">
+            <div class="oneh1">❄️Hey my cute baby..😍</div>
+
+            <div class="oneh2" id="oneH2"><p>✨Type(<p style="color: rgb(255, 0, 0); font-weight: bolder;" >I Love You Baby</p>)🧸unlock my surprise Love Letter💌</p></div>
+
+            <input type="text" id="input">
+
+            <div class="two" id="two">Oops! 🤗Type Properly Baby❣️</div>
+
+            <div class="otwo">
+            <button class="btn1" id="kavi" onclick="yess()">Submit💞</button>
+        
+        </div>
+    </div>
+
+    <script>
+        var input=document.getElementById("input")
+        var btn=document.getElementById("btn")
+        var oneH2=document.getElementById("two")
+        var kavi=document.getElementById("kavi")
+
+        function yess(){
+        if(input.value === "I Love You Baby"){
+            window.location.href="final.html"
+        }
+        else{
+            oneH2.classList.add('show');
+        }
+    }
+          
+    </script>
+</body>
+</html>
