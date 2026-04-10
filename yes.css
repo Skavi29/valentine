@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Love💖</title>
-    <style>
-        body{
+body{
             background-image: url(heart.avif);
             background-repeat: no-repeat;
             background-size: cover;
@@ -277,67 +270,3 @@
                 margin-top: 20px;
             }
          }
-
-    </style>
-</head>
-<body>
-    <div class="one">
-            <div class="oneh1">💖Will you be my velantine?🥰</div>
-
-            <div class="oneh2" id="oneH2">✨please..Accept my love☺️</div>
-
-            <div class="otwo">
-            <a href="click.html"><button class="btn1" id="yes" onclick="yess()">Yess💞</button></a>
-            <button class="btn2" id="no" onclick="noo()">Noo😔</button>
-        </div>
-    </div>
-
-    <script>
-        var Yes=document.getElementById("yes")
-        var No=document.getElementById("no")
-        var oneh2=document.getElementById("oneH2")
-
-        const pharase=[
-            "Are you sure?🧐",
-            "Really?😫",
-            "🥺Think again!",
-            "Last chance....☝️",
-            "Surely not?😓",
-            "🤧You're heartless💔",
-            "🤧Okkk stop.✋",
-            "stop..🙏😭",
-            "🙏stopppp.....💔🙏"
-        ]
-        
-
-        let clickCount=0
-
-
-        No.addEventListener("click",function(){
-            No.style.position="absolute"
-            No.style.top=Math.floor(Math.random()*80+5)+"%"
-            No.style.left=Math.floor(Math.random()*20+5)+"%"
-
-            if(clickCount<pharase.length){
-                No.innerText=pharase[clickCount];
-                clickCount++;
-            }
-
-        });
-        yes.addEventListener("mouseenter",()=>{
-            // oneh2.classList.add('show');
-            No.innerText="Yess do💖 it"
-            No.style.backgroundColor="rgb(245, 106, 130)"
-           
-        });
-        yes.addEventListener("mouseleave",()=>{
-            // oneh2.classList.remove('show')
-            No.innerText="Noo😔"
-            No.style.backgroundColor="rgb(255, 255, 255)"
-            
-            
-        })
-    
-    </script>
-</body>
-</html>
