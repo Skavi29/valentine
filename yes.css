@@ -31,11 +31,11 @@ body{
             background-size: 800px 650px;    
             }
         }
-        @media screen and (max-width:450px){
+        @media screen and (max-width:360px){
             body{
             background-image: url(heart.avif);
             background-repeat: no-repeat;
-            background-size: 360px 740px;  
+            background-size: 300px 800px;  
             }
         }
         .one{
@@ -99,10 +99,10 @@ body{
         }
         @media screen and (max-width:360px){
             .one{
-                width:300px;
-                height:300px;
-                margin-left: 20px;
-                margin-top: 170px;
+                width:250px;
+                height:200px;
+                margin-left: 10px;
+                margin-top: 150px;
                 border-radius: 20px;
                 /* margin-right: 100px; */
             }
