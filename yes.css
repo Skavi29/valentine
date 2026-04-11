@@ -35,7 +35,7 @@ body{
             body{
             background-image: url(heart.avif);
             background-repeat: no-repeat;
-            background-size: 350px 800px;  
+            background-size: 400px 800px;  
             }
         }
         .one{
@@ -102,7 +102,7 @@ body{
                 width:250px;
                 height:200px;
                 margin-left: 10px;
-                margin-top: 150px;
+                margin-top: 10px;
                 border-radius: 20px;
                 /* margin-right: 100px; */
             }
