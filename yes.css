@@ -31,6 +31,13 @@ body{
             background-size: 800px 650px;    
             }
         }
+        @media screen and (max-width:450px){
+            body{
+            background-image: url(heart.avif);
+            background-repeat: no-repeat;
+            background-size: 360px 740px;  
+            }
+        }
         .one{
             border: 2px solid rgb(94, 92, 92);
             background-color: rgba(236, 95, 173, 0.527);
@@ -90,11 +97,11 @@ body{
                 /* margin-right: 100px; */
             }
         }
-        @media screen and (max-width:450px){
+        @media screen and (max-width:360px){
             .one{
-                width:400px;
-                height:650px;
-                margin-left: 40px;
+                width:300px;
+                height:300px;
+                margin-left: 20px;
                 margin-top: 170px;
                 border-radius: 20px;
                 /* margin-right: 100px; */
@@ -133,6 +140,14 @@ body{
                 font-weight: 600;
             }
         }
+        @media screen and (max-width:360px){
+            .oneh1{
+                width:300px;
+                height:50px;
+                font-size: 17px;
+                /* margin-right: 100px; */
+            }
+        }
         .oneh2{
             /* background-color: rgb(77, 115, 148); */
             width: 600px;
@@ -168,6 +183,14 @@ body{
                 align-items: center;
             }
         }
+        @media screen and (max-width:360px){
+            .oneh2{
+                width:300px;
+                height:50px;
+                margin-top: 30px;
+                /* margin-right: 100px; */
+            }
+        }
         /* .show{
             opacity: 1;
             visibility: visible;
@@ -196,6 +219,13 @@ body{
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                 margin-left: 40px;
                 margin-top: 20px;
+            }
+        }
+        @media screen and (max-width:360px){
+            .btn1{
+                width: 80px;
+                height: 30px;
+                margin-top: 10px;
             }
         }
 
@@ -248,7 +278,15 @@ body{
                 margin-top: 20px;
             }
         }
-
+        @media screen and (max-width:360px){
+            .btn2{
+                width: 80px;
+                height: 30px;
+                margin-top: 10px;
+                margin-left: 200px;
+                font-size: 10px;
+            }
+        }
 
         .btn2:hover{
             box-shadow: 0.9px 0.9px 9px 0.9px black;
@@ -280,3 +318,11 @@ body{
                 margin-top: 20px;
             }
          }
+         @media screen and (max-width:360px){
+            .otwo{
+                width:300px;
+                height:50px;
+                margin-top: 80px;
+                /* margin-right: 100px; */
+            }
+        }
